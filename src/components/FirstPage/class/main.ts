@@ -15,10 +15,15 @@ function init() {
 	const monster = createMonster({
 		name: "野狗",
 		life: 250,
-		atk: 5
+		atk: 5,
+		skills: ["撕咬"]
 	});
-	player.release("普通攻击", monster);
+	return {
+		player: player,
+		monster: monster
+	}
 }
+
 
 export {
 	init

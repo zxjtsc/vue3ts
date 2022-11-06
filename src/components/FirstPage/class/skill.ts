@@ -27,6 +27,9 @@ class Bite extends Skill {
 		this.name = "撕咬";
 		this.demage = 2;
 	}
+	effect(bob1: any, bob2: any) {
+		bob2["life"] -= bob1["atk"] + this.demage;
+	}
 }
 const SkillComparisonTable: { [key: string]: string } = {
 	"普通攻击": "NormalAttack",
