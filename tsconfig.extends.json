@@ -1,0 +1,8 @@
+{
+	"compolerOptions": {
+		"baseUrl": ".",
+		"path": {
+			"@/*": ["src/*"]
+		}
+	}
+}
